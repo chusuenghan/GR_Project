@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ChatRoom">
+
+	<resultMap type="chatroomMap" id="ChatRoomVO">
+		<id property="roomId" 		column="room_id"/>
+		<result property="sender" 	column="sender"/>
+		<result property="chatContent"   column="chat_content"/>
+		<result property="chatTime"   column="chat_time"/>
+	</resultMap>
+	
+	
+	
+	<select id="selectChatRoom" resultMap="ChatRoomVO">
+		<![CDATA[
+			SELECT 
+				room_id, sender, chat_content, DATE_FORMAT(chat_time, '%Y/%m/%d %H:%i') AS chat_time
+			FROM 
+				chatlog_table
+			WHERE 
+				room_id = #{roomId};
+		]]>
+	</select>
+	
+	
+	
+	<insert id="insertChat" parameterType="chatroomMap" useGeneratedKeys="true" keyProperty="chatTime">
+		<![CDATA[
+			INSERT INTO chatlog_table
+				(room_id, sender, chat_content, chat_time)
+			VALUES
+				(#{roomId}, #{sender}, #{chatContent}, NOW());
+		]]>
+	</insert>
+</mapper>

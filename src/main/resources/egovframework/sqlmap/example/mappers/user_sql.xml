@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+
+	<resultMap type="userMap" id="UserVO">
+		<id property="userId" 		column="user_id"/>
+		<result property="pwd" 		column="pwd"/>
+		<result property="name" 	column="name"/>
+		<result property="phone" 	column="phone"/>
+		<result property="used"     column="used"/>
+	</resultMap>
+	
+	<select id="selectPwd" parameterType="String" resultType="String">
+		<![CDATA[
+			SELECT
+				pwd
+			FROM
+				user_table
+			WHERE
+				user_id = #{userId};
+		]]>
+	</select>
+	
+	<insert id="insertUser" parameterType="userMap">
+		<![CDATA[
+			INSERT INTO user_table
+				(user_id, pwd, name, phone)
+			VALUES
+				(#{userId}, #{pwd}, #{name}, #{phone});
+		]]>
+	</insert>
+	
+	<select id="selectUserInfo" parameterType="String" resultMap="UserVO">
+		<![CDATA[
+			SELECT
+				user_id, name, phone
+			FROM
+				user_table
+			WHERE
+				user_id = #{userId};
+		]]>
+	</select>
+	
+	<update id="updateUser" parameterType="userMap">
+		<![CDATA[
+			UPDATE user_table
+			SET
+				pwd = #{pwd},
+				name = #{name},
+				phone = #{phone}
+			WHERE
+				user_id = #{userId};
+		]]>
+	</update>
+	
+	<delete id="deleteUser" parameterType="String">
+		<![CDATA[
+			UPDATE user_table
+			SET
+				used = 'N'
+			WHERE
+				user_id = #{userId};
+		]]>
+	</delete>
+	
+	<select id="selectUsed" parameterType="String" resultType="String">
+		<![CDATA[
+			SELECT
+				used
+			FROM
+				user_table
+			WHERE
+				user_id = #{userId};
+		]]>
+	</select>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserRating">
+	
+	<resultMap type="userratingMap" id="UserRatingVO">
+		<id property="userId" 		column="user_id"/>
+		<result property="rating" 		column="rating"/>
+	</resultMap>
+	
+	<select id="avgRating" parameterType="String" resultMap="UserRatingVO">
+		<![CDATA[
+			SELECT AVG(rating) as rating
+			FROM user_rate
+			WHERE user_id = #{userId}
+			GROUP BY user_id;
+		]]>
+	</select>
+	
+	<insert id="insertRating" parameterType="userratingMap">
+		<![CDATA[
+			INSERT INTO user_rate
+				(user_id, rating)
+			VALUES
+				(#{userId}, #{rating});
+		]]>
+	</insert>
+	
+</mapper>

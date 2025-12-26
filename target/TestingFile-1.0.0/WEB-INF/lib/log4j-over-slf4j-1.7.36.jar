@@ -1,0 +1,123 @@
+egory="_PrD2anFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp83FuEe61nOX_J2yB0w" elementId="org.eclipse.tools.layout.spy.commands.layoutSpyCommand" commandName="Layout Spy" description="Show the Layout Spy" category="_PrD2m3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp9HFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.team.SimplePush" commandName="Push to Upstream" category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp9XFuEe61nOX_J2yB0w" elementId="refresh.schema.editor.action.id" commandName="Refresh from Server" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp9nFuEe61nOX_J2yB0w" elementId="org.eclipse.debug.ui.commands.addMemoryMonitor" commandName="Add Memory Block" description="Add memory block" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp93FuEe61nOX_J2yB0w" elementId="org.eclipse.pde.ui.organizeManifest" commandName="Organize Manifests" description="Cleans up plug-in manifest files" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp-HFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.navigate.gototype" commandName="Go to Type" description="Go to Type" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp-XFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.commitContainer" commandName="Commit" description="Commit the selected container into a new image" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp-nFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.junit.junitShortcut.run" commandName="Run JUnit Test" description="Run JUnit Test" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp-3FuEe61nOX_J2yB0w" elementId="org.eclipse.jpt.jpa.ui.convertJavaQueries" commandName="Move Java Queries to XML..." category="_PrD2c3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp_HFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.PushHeadToGerrit" commandName="Push Current Head to Gerrit" category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp_XFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp_nFuEe61nOX_J2yB0w" elementId="org.eclipse.eclemma.ui.swtBotJunitShortcut.coverage" commandName="Coverage SWTBot Test" description="Coverage SWTBot Test" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCp_3FuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.show.outline" commandName="Quick Outline" description="Show the quick outline for the editor input" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqAHFuEe61nOX_J2yB0w" elementId="org.eclipse.jst.jsp.ui.refactor.move" commandName="Move" description="Move a Java Element to another package" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqAXFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.goto.next.member" commandName="Go to Next Member" description="Move the caret to the next member of the compilation unit" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqAnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.project.rebuildProject" commandName="Rebuild Project" description="Rebuild the selected projects" category="_PrD2kHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqA3FuEe61nOX_J2yB0w" elementId="org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples.tableschemaeditor.pastecolumn" commandName="Paste" category="_PrD2jHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqBHFuEe61nOX_J2yB0w" elementId="org.eclipse.m2e.core.pomFileAction.run" commandName="Run Maven Build" description="Run Maven Build" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqBXFuEe61nOX_J2yB0w" elementId="org.eclipse.eclemma.ui.linkWithSelection" commandName="Link with Current Selection" category="_PrD2Z3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqBnFuEe61nOX_J2yB0w" elementId="org.eclipse.m2e.actions.LifeCycleInstall.run" commandName="Run Maven Install" description="Run Maven Install" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqB3FuEe61nOX_J2yB0w" elementId="org.eclipse.datatools.sqltools.sqleditor.ExecuteCurrentAction" commandName="Execute Current Text" category="_PrD2lXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqCHFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.edit.text.copyLineDown" commandName="Copy Lines" description="Duplicates the selected lines and moves the selection to the copy" category="_PrD2YHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqCXFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.tagImage" commandName="Add &amp;Tag" description="Add a tag to an Image" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqCnFuEe61nOX_J2yB0w" elementId="egovframework.mdev.imp.ide.commands.newMobileTemplateProject" commandName="New Mobile Template Project" category="_PrD2b3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqC3FuEe61nOX_J2yB0w" elementId="org.eclipse.oomph.setup.editor.perform" commandName="Perform Setup Tasks" category="_PrD2hHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqDHFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.raw.paste" commandName="Raw Paste" description="Paste and ignore smart insert setting" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqDXFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.help.installationDialog" commandName="Installation Information" description="Open the installation dialog" category="_PrD2jnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqDnFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.open.type.hierarchy" commandName="Open Type Hierarchy" description="Open a type hierarchy on the selected element" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqD3FuEe61nOX_J2yB0w" elementId="org.eclipse.debug.ui.commands.ToggleStepFilters" commandName="Use Step Filters" description="Toggles enablement of debug step filters" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqEHFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.edit.text.goto.lineUp" commandName="Line Up" description="Go up one line of text" category="_PrD2YHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqEXFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.edit.text.goto.windowStart" commandName="Window Start" description="Go to the start of the window" category="_PrD2YHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqEnFuEe61nOX_J2yB0w" elementId="org.eclipse.cft.server.ui.updatepasswordcommand" commandName="Update Password..." description="Update Password" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqE3FuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.correction.addBlock.assist" commandName="Quick Assist - Replace statement with block" description="Invokes quick assist and selects 'Replace statement with block'" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqFHFuEe61nOX_J2yB0w" elementId="org.eclipse.mylyn.commons.ui.command.AddRepository" commandName="Add Repository" category="_PrD2dnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqFXFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.commit.DiffEditorQuickOutlineCommand" commandName="Quick Outline" description="Show the quick outline for a unified diff" category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqFnFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.select.enclosing" commandName="Select Enclosing Element" description="Expand selection to include enclosing element" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqF3FuEe61nOX_J2yB0w" elementId="org.eclipse.ant.ui.antShortcut.debug" commandName="Debug Ant Build" description="Debug Ant Build" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqGHFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.correction.addNonNLS" commandName="Quick Fix - Add non-NLS tag" description="Invokes quick assist and selects 'Add non-NLS tag'" category="_PrD2Y3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqGXFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.team.AssumeUnchanged" commandName="Assume Unchanged" category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqGnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.window.closePerspective" commandName="Close Perspective" description="Close the current perspective" category="_PrD2anFuEe61nOX_J2yB0w">
+    <parameters xmi:id="_PrCqG3FuEe61nOX_J2yB0w" elementId="org.eclipse.ui.window.closePerspective.perspectiveId" name="Perspective Id"/>
+  </commands>
+  <commands xmi:id="_PrCqHHFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.add.block.comment" commandName="Add Block Comment" description="Enclose the selection with a block comment" category="_PrD2Y3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqHXFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.xml.ui.nextSibling" commandName="Next Sibling" description="Go to Next Sibling" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqHnFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.navigate.open.type" commandName="Open Type" description="Open a type in a JavaScript editor" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqH3FuEe61nOX_J2yB0w" elementId="org.springframework.ide.eclipse.boot.dash.ShowBootDashboard" commandName="Boot Dashboard" description="Show Boot Dashboard view" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqIHFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.execContainer" commandName="Execute Shell" description="Get an interactive shell into this container" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqIXFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.cheatsheets.openCheatSheetURL" commandName="Open Cheat Sheet from URL" description="Open a Cheat Sheet from file at a specified URL." category="_PrD2jnFuEe61nOX_J2yB0w">
+    <parameters xmi:id="_PrCqInFuEe61nOX_J2yB0w" elementId="cheatSheetId" name="Identifier" optional="false"/>
+    <parameters xmi:id="_PrCqI3FuEe61nOX_J2yB0w" elementId="name" name="Name" optional="false"/>
+    <parameters xmi:id="_PrCqJHFuEe61nOX_J2yB0w" elementId="url" name="URL" optional="false"/>
+  </commands>
+  <commands xmi:id="_PrCqJXFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.addConnection" commandName="&amp;Add Connection" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqJnFuEe61nOX_J2yB0w" elementId="revert.schema.editor.action.id" commandName="Revert Object" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqJ3FuEe61nOX_J2yB0w" elementId="org.eclipse.wst.xsl.debug.ui.launchshortcut.debug" commandName="Debug XSLT Transformation" description="Create a configuration to debug an XSLT transformation" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqKHFuEe61nOX_J2yB0w" elementId="egovframework.dev.imp.codegen.model.commands.XMIBasedCodeGen" commandName="XMI Based CodeGen" category="_PrD2b3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqKXFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.team.PushBranch" commandName="Push Branch..." category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqKnFuEe61nOX_J2yB0w" elementId="org.eclipse.m2e.core.ui.command.addDependency" commandName="Add Maven Dependency" description="Add Maven dependency" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqK3FuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.debug.ui.commands.Execute" commandName="Execute" description="Evaluate selected text" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqLHFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.add.block.comment" commandName="Add Block Comment" description="Enclose the selection with a block comment" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqLXFuEe61nOX_J2yB0w" elementId="org.eclipse.jpt.jpa.core.synchronizeClasses" commandName="Synchronize Class List" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqLnFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.navigate.gotopackage" commandName="Go to Folder" description="Go to Folder" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqL3FuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.search.read.access.in.project" commandName="Read Access in Project" description="Search for read references to the selected element in the enclosing project" category="_PrD2k3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqMHFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.file.closeAllSaved" commandName="Close All Saved" description="Close all saved editors" category="_PrD2aHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqMXFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.server.launchShortcut.run" commandName="Run on Server" description="Run the current selection on a server" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqMnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.edit.redo" commandName="Redo" description="Redo the last operation" category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqM3FuEe61nOX_J2yB0w" elementId="org.eclipse.wst.server.launchShortcut.debug" commandName="Debug on Server" description="Debug the current selection on a server" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqNHFuEe61nOX_J2yB0w" elementId="net.harawata.mybatipse.CopyLogStatement" commandName="Copy MyBatis Statement" description="Copy MyBatis statement in the Console View as an executable SQL statement." category="_PrD2bnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqNXFuEe61nOX_J2yB0w" elementId="org.eclipse.m2e.editor.RenameArtifactAction" commandName="Rename Maven Artifact..." category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqNnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.navigate.selectWorkingSets" commandName="Select Working Sets" description="Select the working sets that are applicable for this window." category="_PrD2anFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqN3FuEe61nOX_J2yB0w" elementId="org.eclipse.datatools.sqltools.sqleditor.ExecuteSQLAction" commandName="Execute All" category="_PrD2lXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqOHFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.displayContainerLog" commandName="Display Log" description="Display the log for the selected container in the Console" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqOXFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.rename.element" commandName="Rename - Refactoring " description="Rename the selected element" category="_PrD2jXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqOnFuEe61nOX_J2yB0w" elementId="org.eclipse.pde.api.tools.ui.remove.filters" commandName="Remove &amp;API Problem Filters..." description="Remove API problem filters for this project" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqO3FuEe61nOX_J2yB0w" elementId="org.eclipse.tm.terminal.view.ui.command.newview" commandName="New Terminal View" category="_PrD2inFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqPHFuEe61nOX_J2yB0w" elementId="org.eclipse.team.svn.ui.command.CompareWithWorkingCopyCommand" commandName="Base from Working Copy" category="_PrD2ZnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqPXFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.externalize.strings" commandName="Externalize Strings" description="Finds all strings that are not externalized and moves them into a separate property file" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqPnFuEe61nOX_J2yB0w" elementId="org.eclipse.wst.jsdt.ui.correction.extractConstant.assist" commandName="Quick Assist - Extract constant" description="Invokes quick assist and selects 'Extract constant'" category="_PrD2Y3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqP3FuEe61nOX_J2yB0w" elementId="org.eclipse.lsp4e.showkindinoutline" commandName="Show Kind in Outline" category="_PrD2iXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqQHFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.file.close" commandName="Close" description="Close the active editor" category="_PrD2aHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqQXFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.surround.with.try.catch" commandName="Surround with try/catch Block" description="Surround the selected text with a try/catch block" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqQnFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.goto.previous.member" commandName="Go to Previous Member" description="Move the caret to the previous member of the compilation unit" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqQ3FuEe61nOX_J2yB0w" elementId="egovframework.dev.imp.ide.commands.nexus" commandName="Nexus" category="_PrD2b3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqRHFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.history.Reset" commandName="Reset..." category="_PrD2enFuEe61nOX_J2yB0w">
+    <parameters xmi:id="_PrCqRXFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.history.ResetMode" name="Reset mode" optional="false"/>
+  </commands>
+  <commands xmi:id="_PrCqRnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.navigate.previousSubTab" commandName="Previous Sub-Tab" description="Switch to the previous sub-tab" category="_PrD2h3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqR3FuEe61nOX_J2yB0w" elementId="org.eclipse.team.svn.ui.command.SynchronizeCommand" commandName="Synchronize with Repository" category="_PrD2ZnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqSHFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals" commandName="Generate hashCode() and equals()" description="Generates hashCode() and equals() methods for the type" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqSXFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.navigate.showIn" commandName="Show In" category="_PrD2h3FuEe61nOX_J2yB0w">
+    <parameters xmi:id="_PrCqSnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.navigate.showIn.targetId" name="Show In Target Id" optional="false"/>
+  </commands>
+  <commands xmi:id="_PrCqS3FuEe61nOX_J2yB0w" elementId="sed.tabletree.collapseAll" commandName="Collapse All" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqTHFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.RepositoriesViewRemoveRemote" commandName="Delete Remote" category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqTXFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.dialogs.openInputDialog" commandName="Open Input Dialog" description="Open an Input Dialog" category="_PrD2cXFuEe61nOX_J2yB0w">
+    <parameters xmi:id="_PrCqTnFuEe61nOX_J2yB0w" elementId="title" name="Title"/>
+    <parameters xmi:id="_PrCqT3FuEe61nOX_J2yB0w" elementId="message" name="Message"/>
+    <parameters xmi:id="_PrCqUHFuEe61nOX_J2yB0w" elementId="initialValue" name="Initial Value"/>
+    <parameters xmi:id="_PrCqUXFuEe61nOX_J2yB0w" elementId="cancelReturns" name="Return Value on Cancel"/>
+  </commands>
+  <commands xmi:id="_PrCqUnFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.showInWebBrowser" commandName="Web Browser" description="Show in Web Browser" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqU3FuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.RebaseCurrent" commandName="Rebase" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqVHFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.add.unimplemented.constructors" commandName="Generate Constructors from Superclass" description="Evaluate and add constructors from superclass" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqVXFuEe61nOX_J2yB0w" elementId="org.eclipse.mylyn.tasks.ui.command.markTaskComplete" commandName="Mark Task Complete" category="_PrD2ZHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqVnFuEe61nOX_J2yB0w" elementId="org.eclipse.ui.edit.text.select.windowStart" commandName="Select Window Start" description="Select to the start of the window" category="_PrD2YHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqV3FuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.source.quickMenu" commandName="Show Source Quick Menu" description="Shows the source quick menu" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqWHFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.project" commandName="Declaration in Project" description="Search for declarations of the selected element in the enclosing project" category="_PrD2k3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqWXFuEe61nOX_J2yB0w" elementId="egovframework.boot.dev.imp.ide.commands.newMsaTemplateProject" commandName="New MSA Boot Template Project" category="_PrD2b3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqWnFuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.RepositoriesViewImportProjects" commandName="Import Projects..." description="Import or create in local Git repository" category="_PrD2lHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqW3FuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.showAllContainers" commandName="&amp;Show all Containers" description="Show all Containers, including non-running ones." category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqXHFuEe61nOX_J2yB0w" elementId="org.eclipse.eclemma.ui.commands.CoverageLast" commandName="Coverage" description="Coverage" category="_PrD2cHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqXXFuEe61nOX_J2yB0w" elementId="org.eclipse.compare.copyAllLeftToRight" commandName="Copy All from Left to Right" description="Copy All Changes from Left to Right" category="_PrD2i3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqXnFuEe61nOX_J2yB0w" elementId="org.eclipse.team.svn.ui.command.EditPropertiesCommand" commandName="Show Properties" category="_PrD2ZnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqX3FuEe61nOX_J2yB0w" elementId="egovframework.bdev.imp.ide.commands.newBatchTemplateProject" commandName="New Boot Batch Template Project" category="_PrD2b3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqYHFuEe61nOX_J2yB0w" elementId="org.eclipse.datatools.enablement.sybase.asa.schemaobjecteditor.examples.tableschemaeditor.cutcolumn" commandName="Cut" category="_PrD2jHFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqYXFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.surround.with.quickMenu" commandName="Surround With Quick Menu" description="Shows the Surround With quick menu" category="_PrD2mnFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqYnFuEe61nOX_J2yB0w" elementId="net.harawata.mybatipse.refactoring.RenameJavaElement" commandName="Rename MyBatis element" description="Rename MyBatis statement/resultMap ID in Java mapper." category="_PrD2XXFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqY3FuEe61nOX_J2yB0w" elementId="org.eclipse.search.ui.openFileSearchPage" commandName="File Search" description="Open the Search dialog's file search page" category="_PrD2k3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqZHFuEe61nOX_J2yB0w" elementId="egovframework.dev.imp.ide.commands.custIDe" commandName="Customize Development Tool" category="_PrD2b3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqZXFuEe61nOX_J2yB0w" elementId="org.eclipse.jdt.ui.edit.text.java.search.implementors.in.workspace" commandName="Implementors in Workspace" description="Search for implementors of the selected interface" category="_PrD2k3FuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqZnFuEe61nOX_J2yB0w" elementId="org.eclipse.linuxtools.docker.ui.commands.removeImages" commandName="Re&amp;move " description="Remove the selected images" category="_PrD2enFuEe61nOX_J2yB0w"/>
+  <commands xmi:id="_PrCqZ3FuEe61nOX_J2yB0w" elementId="org.eclipse.egit.ui.RepositoriesViewAddRepository" commandName="Add a Git Repository..." description="Adds an existing Git repository to the Git Repositorie

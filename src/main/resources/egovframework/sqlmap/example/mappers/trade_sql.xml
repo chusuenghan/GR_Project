@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Trade">
+
+	<resultMap type="tradeMap" id="TradeVO">
+		<id property="tradeId" 		column="trade_id"/>
+		<result property="writerId" 	column="writer_id"/>
+		<result property="phone"   column="phone"/>
+		<result property="title" 		column="title"/>
+		<result property="professor" 	column="professor"/>
+		<result property="contents" 	column="contents"/>
+		<result property="price" 	column="price"/>
+		<result property="now_date" 	column="nowdate" />
+		<result property="image"     column="image"/>
+		<result property="tradeStatus"     column="trade_status"/>
+	</resultMap>
+	
+	<select id="selectTradeList" parameterType="pageMap" resultMap="TradeVO">
+		
+			SELECT 
+				trade_id, writer_id, title, professor, contents, price, nowdate, image, trade_status
+				
+			FROM 
+				trade_table T
+			LEFT JOIN user_table U ON (T.writer_id = U.user_id)
+			WHERE (trade_status = 'FIND')
+			<if test="searchTerm != null and searchTerm != ''">
+		        AND title LIKE CONCAT('%', #{searchTerm}, '%')
+		    </if>
+			ORDER BY nowdate DESC
+			LIMIT #{startIndex}, #{pageSize};
+		
+	</select>
+	
+	<select id="countPosts" resultType="int">
+		<![CDATA[
+			SELECT COUNT(trade_id) FROM trade_table WHERE trade_status = 'FIND';
+		]]>
+	</select>
+	
+	<select id="countPostsBySearchTerm" resultType="int">
+	    SELECT COUNT(trade_id) 
+	    FROM trade_table
+	    WHERE (trade_status = 'FIND')
+	    <if test="searchTerm != null and searchTerm != ''">
+	        AND title LIKE CONCAT('%', #{searchTerm}, '%')
+	    </if>
+	</select>
+	
+	<insert id="insertTrade" parameterType="tradeMap" useGeneratedKeys="true" keyProperty="tradeId">
+		<![CDATA[
+			INSERT INTO trade_table
+				(writer_id, title, professor, contents, price, nowdate, image, trade_status)
+			VALUES
+				(#{writerId}, #{title}, #{professor}, #{contents}, #{price}, NOW(), #{image}, 'FIND');
+		]]>
+	</insert>
+	
+	<select id="selectTrade" resultMap="TradeVO">
+		<![CDATA[
+			SELECT 
+				trade_id, writer_id, title, professor, contents, price, nowdate, image, trade_status
+				
+			FROM 
+				trade_table T
+			LEFT JOIN user_table U ON (T.writer_id = U.user_id)
+ 			WHERE T.trade_id = #{tradeId};
+		]]>
+	</select>
+	
+	<select id="selectMyTrade" resultMap="TradeVO">
+		<![CDATA[
+			SELECT 
+				trade_id, writer_id, title, professor, contents, price, nowdate, image, trade_status
+				
+			FROM 
+				trade_table T
+			LEFT JOIN user_table U ON (T.writer_id = U.user_id)
+ 			WHERE T.writer_id = #{writerId};
+		]]>
+	</select>
+	
+	<select id="selectByTradeIds" parameterType="list" resultMap="TradeVO">
+	<if test="list != null and list.size() > 0">
+        SELECT 
+        	trade_id, writer_id, title, professor, contents, price, nowdate, image, trade_status
+        FROM trade_table T
+        LEFT JOIN user_table U ON (T.writer_id = U.user_id)
+        WHERE trade_status='FINISH' 
+        AND trade_id IN 
+        <foreach item="tradeId" index="index" collection="list" open="(" separator="," close=")">
+            #{tradeId}
+        </foreach>
+    </if>
+    </select>
+	
+	<select id="selectWriterId" resultType="String">
+		<![CDATA[
+			SELECT 
+				writer_id
+			FROM 
+				trade_table T
+			LEFT JOIN user_table U ON (T.writer_id = U.user_id)
+ 			WHERE T.trade_id = #{tradeId};
+		]]>
+	</select>
+	
+	<update id="updateTrade" parameterType="tradeMap">
+		<![CDATA[
+			UPDATE trade_table
+			SET
+				title = #{title},
+				professor = #{professor}, 
+				contents = #{contents},
+				price = #{price},
+				nowdate = NOW(),
+				image = #{image}
+			WHERE
+				trade_id = #{tradeId};
+		]]>
+	</update>
+	
+	<delete id="deleteTrade" parameterType="int">
+		<![CDATA[
+			DELETE FROM trade_table
+			WHERE
+				trade_id = #{tradeId};
+		]]>
+	</delete>
+	
+	<update id="updateTradeStatus" parameterType="tradeMap">
+		<![CDATA[
+			UPDATE trade_table
+			SET
+				trade_status = #{tradeStatus}
+			WHERE
+				trade_id = #{tradeId};
+		]]>
+	</update>
+</mapper>

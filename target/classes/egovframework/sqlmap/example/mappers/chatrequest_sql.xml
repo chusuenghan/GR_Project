@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="chatRequest">
+	
+	<resultMap type="chatrequestMap" id="ChatRequestVO">
+		<id property="requesterId" 		column="requester_id"/>
+		<result property="writerId" 	column="writer_id"/>
+		<result property="tradeId"   column="trade_id"/>
+		<result property="reqStatus" column="req_status"/>
+		<result property="requestId" column="request_id"/>
+	</resultMap>
+	
+	<insert id="insertChatRequest" parameterType="chatrequestMap">
+	    INSERT INTO chat_request 
+	    	(requester_id, writer_id, trade_id, req_status)
+	    VALUES 
+	    	(#{requesterId}, #{writerId}, #{tradeId}, 'PENDING');
+	</insert>
+
+	<select id="checkChatRequestStatus" parameterType="chatrequestMap" resultType="string">
+	    SELECT req_status
+	    FROM chat_request
+	    WHERE (trade_id = #{tradeId} AND requester_id = #{requesterId})
+	    OR (trade_id = #{tradeId} AND req_status = 'ACCEPTED')
+	    ORDER BY CASE 
+        WHEN req_status = 'ACCEPTED' THEN 1
+        ELSE 2
+    	END
+	    LIMIT 1;
+	</select>
+	
+	<delete id="declineChatRequest" parameterType="chatrequestMap">
+	    DELETE FROM chat_request
+	    WHERE (requester_id = #{requesterId} AND trade_id = #{tradeId});
+	</delete>
+	
+	<delete id="declineChatPending" parameterType="int">
+	    DELETE FROM chat_request
+	    WHERE (req_status = 'PENDING' AND trade_id = #{tradeId});
+	</delete>
+	
+	<delete id="declineChatAccept" parameterType="int">
+	    DELETE FROM chat_request
+	    WHERE (req_status = 'ACCEPTED' AND trade_id = #{tradeId});
+	</delete>
+	
+	<select id="getChatRequestStatus" resultType="string">
+	    SELECT req_status 
+	    FROM chat_request 
+	    WHERE (requester_id = #{requesterId} AND writer_id = #{writerId}) 
+	    OR (trade_id = #{tradeId} AND req_status = 'ACCEPTED')
+	    LIMIT 1;
+	</select>
+	
+	<select id="getChatRequests" resultMap="ChatRequestVO">
+	    SELECT requester_id, writer_id, trade_id
+	    FROM chat_request 
+	    WHERE trade_id = #{tradeId};
+	</select>
+	
+	<select id="findAcceptedRoom" resultType="int">
+	    SELECT trade_id
+	    FROM chat_request 
+	    WHERE (requester_id = #{requesterId} AND req_status = 'ACCEPTED');
+	</select>
+	
+	<update id="acceptChatRequest" parameterType="chatrequestMap">
+		<![CDATA[
+			UPDATE chat_request
+			SET
+				req_status = 'ACCEPTED'
+			WHERE
+				(requester_id = #{requesterId} AND trade_id = #{tradeId});
+		]]>
+	</update>
+</mapper>

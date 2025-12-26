@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CRChat">
+
+	<resultMap type="crchatMap" id="CRChatVO">
+		<id property="roomId" 		column="room_id"/>
+		<result property="user1Id" 	column="user1_id"/>
+		<result property="user2Id"   column="user2_id"/>
+		<result property="otherUserId" column="otherUserId"/>
+		<result property="tradeId"   column="trade_id"/>
+	</resultMap>
+	
+	<select id="selectChatRoomList" resultMap="CRChatVO">
+		<![CDATA[
+			SELECT 
+				room_id,
+				CASE
+			        WHEN user1_id = #{user1Id} THEN user2_id
+			        ELSE user1_id
+			    END AS otherUserId
+			FROM 
+				chatroom
+			WHERE (user1_id = #{user1Id} OR user2_id = #{user1Id}); 
+		]]>
+	</select>
+	
+	<select id="selectSpecificChatRoom" resultType="String">
+		<![CDATA[
+			SELECT 
+				room_id
+			FROM 
+				chatroom
+			WHERE (user1_id = #{user1Id} And user2_id = #{user2Id})
+				OR (user1_id = #{user2Id} And user2_id = #{user1Id}); 
+		]]>
+	</select>
+	
+	<select id="findTradeId" resultType="int">
+		<![CDATA[
+			SELECT 
+				trade_id
+			FROM 
+				chatroom
+			WHERE room_id = #{roomId};
+		]]>
+	</select>
+	
+	<insert id="insertChatRoom" parameterType="crchatMap">
+		<![CDATA[
+			INSERT INTO chatroom
+				(room_id, user1_id, user2_id, trade_id)
+			VALUES
+				(#{roomId}, #{user1Id}, #{user2Id}, #{tradeId});
+		]]>
+	</insert>
+</mapper>

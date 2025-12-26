@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Notification">
+	
+	<resultMap type="notificationMap" id="NotificationVO">
+		<id property="notiId" 		column="noti_id"/>
+		<result property="userId" 		column="user_id"/>
+		<result property="tradeId" 		column="trade_id"/>
+		<result property="isRead" 		column="is_read"/>
+		<result property="makeDate" 		column="make_date"/>
+		<result property="userCount" 		column="user_count"/>
+		<result property="notiStatus" 		column="noti_status"/>
+	</resultMap>
+	
+	<select id="findNotification" resultMap="NotificationVO">
+		<![CDATA[
+			SELECT noti_id, user_id, trade_id, is_read, make_date, user_count, noti_status
+			FROM user_notification
+			Where user_id = #{userId}
+			ORDER BY make_date DESC;
+		]]>
+	</select>
+	
+	<select id="findNotiIsRead" resultMap="NotificationVO">
+		<![CDATA[
+			SELECT noti_id, user_id, trade_id, is_read, make_date, user_count, noti_status
+			FROM user_notification
+			Where (user_id = #{userId} AND is_read = 'N');
+			
+		]]>
+	</select>
+	
+	<update id="updateNotiIsRead" parameterType="String">
+		<![CDATA[
+			UPDATE user_notification
+			SET
+				is_read = 'Y'
+			WHERE
+				(user_id = #{userId} AND is_read = 'N');
+		]]>
+	</update>
+	
+	<insert id="insertNotification" parameterType="notificationMap">
+		<![CDATA[
+			INSERT INTO user_notification
+				(user_id, trade_id, make_date, user_count, noti_status)
+			VALUES
+				(#{userId}, #{tradeId}, NOW(), #{userCount}, #{notiStatus});
+		]]>
+	</insert>
+
+	<delete id="deleteNotification" parameterType="int">
+	    DELETE FROM user_notification
+	    WHERE noti_id = #{notiId};
+	</delete>
+</mapper>

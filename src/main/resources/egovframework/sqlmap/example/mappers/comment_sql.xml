@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Comment">
+
+	<resultMap type="commentMap" id="CommentVO">
+		<id property="tradeId" 		column="trade_id"/>
+		<result property="writerId" 	column="writer_id"/>
+		<result property="commentId"   column="comment_id"/>
+		<result property="parentId" 		column="parent_id"/>
+		<result property="content" 	column="content"/>
+		<result property="nowDate" 	column="nowDate" />
+	</resultMap>
+
+	<select id="selectCommentList" resultMap="CommentVO">
+		<![CDATA[
+			SELECT 
+				trade_id, writer_id, comment_id, parent_id, content, nowDate
+			FROM 
+				comment_table
+			WHERE trade_id = #{tradeId};
+		]]>
+	</select>
+	
+	<insert id="insertComment" parameterType="commentMap">
+		<![CDATA[
+			INSERT INTO comment_table
+				(trade_id, writer_id, parent_id, content, nowDate)
+			VALUES
+				(#{tradeId}, #{writerId}, #{parentId}, #{content}, NOW());
+		]]>
+	</insert>
+	
+</mapper>
